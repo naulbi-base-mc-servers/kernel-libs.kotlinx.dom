@@ -26,7 +26,7 @@
 
     <properties>
         <kotlin.version>1.0.0</kotlin.version>
-        <dokka.version>0.9.4</dokka.version>
+        <!--<dokka.version>0.9.4</dokka.version>-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -99,11 +99,11 @@
                 <configuration>
                     <descriptors>
                         <descriptor>src/assembly/sources.xml</descriptor>
-                        <descriptor>src/assembly/dokka.xml</descriptor>
+                        <!--<descriptor>src/assembly/dokka.xml</descriptor>-->
                     </descriptors>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.jetbrains.dokka</groupId>
                 <artifactId>dokka-maven-plugin</artifactId>
                 <version>${dokka.version}</version>
@@ -121,7 +121,7 @@
                         <dir>src/main/kotlin.jvm</dir>
                     </sourceDirectories>
                 </configuration>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.2</version>
@@ -159,7 +159,7 @@
                 </executions>
             </plugin>
 
-            <plugin>
+            <!--<plugin>
                 <groupId>com.devexperts.bintray</groupId>
                 <artifactId>bintray-maven-plugin</artifactId>
                 <version>1.0.1</version>
@@ -175,7 +175,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
 
         <pluginManagement>
@@ -246,7 +246,7 @@
                                 </configuration>
                             </execution>
 
-                            <execution>
+                            <!--<execution>
                                 <id>test-compile</id>
                                 <phase>test-compile</phase>
                                 <goals>
@@ -258,7 +258,7 @@
                                         <dir>${project.basedir}/src/test/kotlin.jvm</dir>
                                     </sourceDirs>
                                 </configuration>
-                            </execution>
+                            </execution>-->
                         </executions>
                     </plugin>
                 </plugins>
@@ -284,7 +284,7 @@
                         <groupId>org.jetbrains.kotlin</groupId>
                         <artifactId>kotlin-maven-plugin</artifactId>
                         <executions>
-                            <execution>
+                            <!--<execution>
                                 <id>test-compile-js</id>
                                 <phase>test-compile</phase>
                                 <goals>
@@ -296,7 +296,7 @@
                                         <dir>${project.basedir}/src/test/kotlin.js</dir>
                                     </sourceDirs>
                                 </configuration>
-                            </execution>
+                            </execution>-->
 
                             <execution>
                                 <id>js-compile</id>
